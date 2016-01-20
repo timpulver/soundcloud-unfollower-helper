@@ -1,0 +1,18 @@
+{
+  "name": "soundcloud-following-cleanup",
+  "version": "0.1.0",
+  "description": "Downloads your Soundcloud followings and open a random one in the browser for you to decide if you want to unfollow or not.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Tim Pulver",
+  "license": "ISC",
+  "dependencies": {
+    "opener": "^1.4.1",
+    "soundcloud-nodejs-api-wrapper": "^0.3.2"
+  },
+  "scripts": {
+    "start": "node app.js"	  
+  }
+}
