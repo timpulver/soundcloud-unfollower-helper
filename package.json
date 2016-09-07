@@ -11,8 +11,5 @@
   "dependencies": {
     "opener": "^1.4.1",
     "soundcloud-nodejs-api-wrapper": "^0.3.2"
-  },
-  "scripts": {
-    "start": "node app.js"	  
   }
 }
