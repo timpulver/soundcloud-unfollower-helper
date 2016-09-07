@@ -1,6 +1,9 @@
 // This script is intended to clean up your following-list on Soundcloud
 // It will download all the follwings-data and open a random following-url
 // in the browser, so you can check if you still like the sound that person makes.
+//
+// If you get a 401 response your request token might be expired,
+// run get_access_token.js with your credentials to get a new one.
 
 var SC = require('soundcloud-nodejs-api-wrapper');
 var opener = require('opener');
@@ -19,7 +22,7 @@ client = sc.client({access_token : apiToken});
 // vars
 var followings = [];
 
-// request info about ourselves to get the number of followings
+//request info about ourselves to get the number of followings
 client.get('/me', {},function(err, result, response) {
   if (err) console.error(err);
 
